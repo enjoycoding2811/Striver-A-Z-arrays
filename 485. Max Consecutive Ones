@@ -1,0 +1,26 @@
+class Solution {
+    public int findMaxConsecutiveOnes(int[] nums) {
+        int ct=0,max=0;
+        for(int x:nums){
+            if(x==1){
+            ct++;
+            max=Math.max(max,ct);}
+        
+        else{
+            ct=0;
+        }}
+        return max;
+    }
+}
+
+⏱️ Time Complexity
+
+Traverses once:
+
+✅ O(n)
+
+💾 Space Complexity
+
+Uses only 2 variables:
+
+✅ O(1)
