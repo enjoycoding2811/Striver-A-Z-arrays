@@ -1,0 +1,13 @@
+int max = nums[n - 1];
+ans.add(max);
+
+for (int i = n - 2; i >= 0; i--) {
+    if (nums[i] > max) {
+        ans.add(nums[i]);
+        max = nums[i];
+    }
+}
+
+Time Complexity: O(N), where N is the size of the input array. This is because we traverse the array only once.
+
+Space Complexity: O(1), as we are using only a constant amount of extra space.
